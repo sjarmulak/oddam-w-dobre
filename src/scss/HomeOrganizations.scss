@@ -1,0 +1,46 @@
+
+@import "./main.scss"; 
+
+#organizations {
+
+    .org-names {
+        display: flex;
+        span {
+            cursor: pointer;
+            color: $base-font-color;
+            padding: 20px;
+            border: solid $base-font-color;
+            border-width: 0px;
+           
+        }
+        // .active {
+        //     border: 1px solid $base-font-color;
+        // }
+    }
+
+    p.org-section-description {
+        width: 40%
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            border-bottom: 1px solid $secondary-color;
+
+            * {
+                margin: 5px;
+                padding: 0;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

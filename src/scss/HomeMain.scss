@@ -1,0 +1,28 @@
+@import "./main.scss";
+
+#main {
+    height: 70vh;
+    background-image: url("../assets/Home-Hero-Image.jpg");
+    background-position: -20vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 20px;
+
+    .main-info {
+        max-width: 800px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0 auto auto;
+    }
+
+    .buttons {
+        display: flex;
+        button {
+            margin: 10px
+        }
+
+    }
+}

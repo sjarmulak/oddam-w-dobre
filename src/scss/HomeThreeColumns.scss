@@ -1,0 +1,26 @@
+@import "./main.scss";
+
+#three-columns {
+    background-image: url("../assets/3-Columns-Background.png");
+    padding: 50px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    font-size: 90px;
+    font-weight: 100;
+    color: $secondary-font-color;
+    margin: 10px;
+}
+
+span {
+    display: block;
+    font-size: 18px;
+    color: $secondary-font-color;
+    font-weight: 400;
+    margin: 10px;
+}

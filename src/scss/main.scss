@@ -5,4 +5,64 @@
 
 body {
     font-family: $font-base;
+    color: $base-font-color;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+
+    li {
+        padding: 1rem;
+    }
+}
+
+section {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $base-font-color;
+
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    font-weight: 400;
+}
+
+button {
+    text-transform: uppercase;
+    border: 1px solid $base-font-color;
+    font-size: 36px;
+    font-weight: 100;
+    width: 310px;
+    height: 120px;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover {
+        background-color: $theme-color;
+        opacity: 90%;
+    }
 }

@@ -1,0 +1,24 @@
+@import "./main.scss";
+
+.login {
+    font-size: 14px;
+}
+
+nav {
+    font-size: 18px;
+}
+
+#zaloz-konto {
+    border: 1px solid $theme-color;
+    padding: auto 10px;
+}
+
+#start-nav {
+    border: 1px solid $base-font-color;
+}
+
+header.container {
+
+        align-items: flex-end;
+
+}

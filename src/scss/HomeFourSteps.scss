@@ -1,0 +1,30 @@
+@import "./main.scss";
+
+#four-steps {
+    
+    padding: 20px 0;
+    .four-steps {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $background-color;
+        padding: 50px;
+
+        .step {
+            padding: 0 10px;
+            max-width: 200px;
+
+            span {
+                color: $base-font-color;
+                font-size: 18px;
+                &:last-child {
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+button {
+    margin-top: 35px;
+}
+}
+
