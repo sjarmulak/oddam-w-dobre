@@ -10,7 +10,7 @@ export default function HomeOrganizations() {
     description: "",
     items: [],
   });
-  const [currOption, setCurrOption] = useState("fundacje");
+  const [currOption, setCurrOption] = useState("fundacje"); // wybieramy jedną z trzech kategorii
   const [page, setPage] = useState(0);
 
   const URL = "http://localhost:3000";
@@ -37,21 +37,28 @@ export default function HomeOrganizations() {
   const handleChange = (opt) => {
     setCurrOption(opt);
     getData(setData, opt);
+    setPage(0);
   };
 
   const getItems = () => {
     const offset = page * 3;
-    return data?.items.length ? data.items.splice(offset, offset + 3) : [];
+    return data?.items.length ? data.items.slice(offset, offset + 3) : [];
   };
 
   const getPagination = () => {
     console.log(data.items);
+    return new Array(Math.ceil(data?.items?.length / 3))
+      .fill(null)
+      .map((_, i) => (
+        <span
+          key={i}
+          onClick={() => setPage(i)}
+          style={{ borderWidth: page == i ? "1px" : "0px" }}
+        >
+          {i + 1}
+        </span>
+      ));
   };
-  // new Array(Math.ceil(data?.items?.length / 3)).fill(null).map((_, i) => (
-  //   <span key={i} onClick={() => setPage(i)}>
-  //     {i + 1}
-  //   </span>
-  // ));
 
   return (
     <section id="organizations">
