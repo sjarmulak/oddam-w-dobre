@@ -13,8 +13,6 @@ export default function Login() {
   const loginSubmit = (e) => {
     e.preventDefault();
     if (handleValidation()) {
-      localStorage.setItem("email", loginValues.login_email);
-      localStorage.setItem("password", loginValues.login_password);
       console.log("Successfully registered");
     } else {
       console.log("Error");

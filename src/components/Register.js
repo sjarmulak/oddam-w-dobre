@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Decoration from "../assets/Decoration.svg";
-import "../scss/Login.scss";
+import "../scss/Register.scss";
 
 export default function Login() {
   const [loginValues, setLoginValues] = useState({
@@ -13,8 +13,6 @@ export default function Login() {
   const loginSubmit = (e) => {
     e.preventDefault();
     if (handleValidation()) {
-      localStorage.setItem("email", loginValues.login_email);
-      localStorage.setItem("password", loginValues.login_password);
       console.log("Successfully registered");
     } else {
       console.log("Error");
@@ -89,6 +87,17 @@ export default function Login() {
                 placeholder=""
                 onChange={(e) => handleChange(e, "login_password")}
                 value={loginValues["login_password"]}
+              />
+              <span style={{ color: "red" }}>{errors.password}</span>
+            </div>
+            <div className="login_password2">
+              <label>Powtórz hasło</label>
+              <input
+                id="login_password2"
+                type="password"
+                placeholder=""
+                onChange={(e) => handleChange(e, "login_password2")}
+                value={loginValues["login_password2"]}
               />
               <span style={{ color: "red" }}>{errors.password}</span>
             </div>
