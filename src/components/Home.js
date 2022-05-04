@@ -8,7 +8,7 @@ import HomeMain from "./HomeMain";
 import HomeOrganizations from "./HomeOrganizations";
 import HomeThreeColumns from "./HomeThreeColumns";
 import "../scss/Home.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import Decoration from "../assets/Decoration.svg";
 
 export default function Home() {
   return (

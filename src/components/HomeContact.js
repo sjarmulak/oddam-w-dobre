@@ -103,7 +103,7 @@ export default function HomeContact() {
       <div className="container">
         <div className="contact-info">
           <h1>Skontaktuj się z nami</h1>
-          <img src={Decoration} alt="" width="100px" height="50px" />
+          <img src={Decoration} alt="" width="250px" />
           {success ? <p>Udało się!</p> : ""}
           <form noValidate action="" onSubmit={formSubmit}>
             <label>Wpisz swoje imię</label>

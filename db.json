@@ -6,37 +6,49 @@
       "items": [
         {
           "id": 11,
-          "title": "Fundacja “Dbam o Zdrowie”",
+          "title": "Fundacja “Dbam o Zdrowie” 1",
           "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
           "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
         },
         {
           "id": 12,
-          "title": "Fundacja “Dla dzieci”",
+          "title": "Fundacja “Dla dzieci” 2",
           "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
           "items": "ubrania, jedzenie, ciepłe koce"
         },
         {
           "id": 13,
-          "title": "Fundacja “Bez domu”",
+          "title": "Fundacja “Bez domu” 3",
           "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
           "items": "ubrania, meble, zabawki"
         },
         {
           "id": 14,
-          "title": "Fundacja “Dbam o Zdrowie2”",
+          "title": "Fundacja “Dbam o Zdrowie” 4",
           "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
           "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
         },
         {
           "id": 15,
-          "title": "Fundacja “Dla dzieci”",
+          "title": "Fundacja “Dla dzieci” 5",
           "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
           "items": "ubrania, jedzenie, ciepłe koce"
         },
         {
           "id": 16,
-          "title": "Fundacja “Bez domu”",
+          "title": "Fundacja “Bez domu” 6",
+          "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+          "items": "ubrania, meble, zabawki"
+        },
+        {
+          "id": 17,
+          "title": "Fundacja “Dla dzieci” 7",
+          "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+          "items": "ubrania, jedzenie, ciepłe koce"
+        },
+        {
+          "id": 18,
+          "title": "Fundacja “Bez domu” 8",
           "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
           "items": "ubrania, meble, zabawki"
         }
@@ -51,19 +63,31 @@
       "items": [
         {
           "id": 23,
-          "title": "Organizacja “Bez domu”",
+          "title": "Organizacja “Bez domu” 1",
           "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
           "items": "ubrania, meble, zabawki"
         },
         {
           "id": 21,
-          "title": "Organizacja “Dbam o Zdrowie”",
+          "title": "Organizacja “Dbam o Zdrowie” 2",
           "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
           "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
         },
         {
           "id": 22,
-          "title": "Organizacja “Dla dzieci”",
+          "title": "Organizacja “Dla dzieci” 3",
+          "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+          "items": "ubrania, jedzenie, ciepłe koce"
+        },
+        {
+          "id": 23,
+          "title": "Organizacja “Dbam o Zdrowie” 4",
+          "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+          "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+        },
+        {
+          "id": 24,
+          "title": "Organizacja “Dla dzieci” 5",
           "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
           "items": "ubrania, jedzenie, ciepłe koce"
         }
@@ -77,20 +101,32 @@
       "description": "Lorem ipsum. W naszej bazie znajdziesz listę zweryfikowanych zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
       "items": [
         {
-          "id": 32,
-          "title": "Zbiórka “Dla dzieci”",
+          "id": 31,
+          "title": "Zbiórka “Dla dzieci” 1",
           "description": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
           "items": "ubrania, jedzenie, ciepłe koce"
         },
         {
-          "id": 31,
-          "title": "Zbiórka “Dbam o Zdrowie”",
+          "id": 32,
+          "title": "Zbiórka “Dbam o Zdrowie” 2",
           "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
           "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
         },
         {
           "id": 33,
-          "title": "Zbiórka “Bez domu”",
+          "title": "Zbiórka “Bez domu” 3",
+          "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+          "items": "ubrania, meble, zabawki"
+        },
+        {
+          "id": 34,
+          "title": "Zbiórka “Dbam o Zdrowie” 4",
+          "description": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+          "items": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+        },
+        {
+          "id": 35,
+          "title": "Zbiórka “Bez domu” 5",
           "description": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
           "items": "ubrania, meble, zabawki"
         }
