@@ -8,7 +8,12 @@ export default function HomeAbout() {
     <section id="about">
       <div className="about-info">
         <h1>O nas</h1>
-        <img src={Decoration} alt="" width="250px" />{" "}
+        <img
+          className="decoration"
+          src={Decoration}
+          alt=""
+          width="250px"
+        />{" "}
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           ad ab excepturi porro repudiandae, voluptates.

@@ -64,7 +64,7 @@ export default function HomeOrganizations() {
     <section id="organizations">
       <div className="container">
         <h1>Komu pomagamy?</h1>
-        <img src={Decoration} alt="" width="100px" height="50px" />
+        <img className="decoration" src={Decoration} alt="" width="250px" />
         <div className="org-names">
           <span
             id="fundacje"

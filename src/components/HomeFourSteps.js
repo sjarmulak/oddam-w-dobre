@@ -11,7 +11,7 @@ export default function HomeFourSteps() {
   return (
     <section id="four-steps">
       <h1>Wystarczą cztery proste kroki</h1>
-      <img src={Decoration} alt="" width="250px" />
+      <img className="decoration" src={Decoration} alt="" width="250px" />
 
       <div className="four-steps">
         <div className="step">

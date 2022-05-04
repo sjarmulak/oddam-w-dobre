@@ -12,7 +12,7 @@ export default function HomeMain() {
             Zacznij pomagać! <br />
             Oddaj niechciane rzeczy w zaufane ręce
           </h1>
-          <img src={Decoration} alt="" width="100px" height="50px" />
+          <img src={Decoration} alt="" width="250px" className="decoration" />
           <br />
           <div className="buttons">
             <NavLink to="/logowanie">

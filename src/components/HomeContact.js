@@ -39,14 +39,19 @@ export default function HomeContact() {
             setSuccess(true);
             setTimeout(() => {
               setSuccess(false);
+              setFormValues({
+                name: "",
+                email: "",
+                message: "",
+              });
             }, 5000);
           }
           console.log(data);
         })
         .catch((err) => console.log(err));
-      alert("Wiadomość została wysłana! Wkrótce się skontaktujemy.");
+      console.log("Successfully sent message");
     } else {
-      alert("Nieprawidłowe pola w formularzu!");
+      console.log("Errors in message");
     }
   };
 
@@ -103,38 +108,54 @@ export default function HomeContact() {
       <div className="container">
         <div className="contact-info">
           <h1>Skontaktuj się z nami</h1>
-          <img src={Decoration} alt="" width="250px" />
-          {success ? <p>Udało się!</p> : ""}
+          <img className="decoration" src={Decoration} alt="" width="250px" />
+          {success ? (
+            <p className="success-message">
+              Wiadomość została wysłana! <br />
+              Wkrótce się skontaktujemy.
+            </p>
+          ) : (
+            ""
+          )}
           <form noValidate action="" onSubmit={formSubmit}>
-            <label>Wpisz swoje imię</label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Krzysztof"
-              onChange={(e) => handleChange(e, "name")}
-              value={formValues["name"]}
-            />
-            <span style={{ color: "red" }}>{errors.name}</span>
+            <div className="name-and-email">
+              <div className="name-input">
+                <label>Wpisz swoje imię</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Krzysztof"
+                  onChange={(e) => handleChange(e, "name")}
+                  value={formValues["name"]}
+                />
+                <span style={{ color: "red" }}>{errors.name}</span>
+              </div>
 
-            <label>Wpisz swój email</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="abc@xyz.com"
-              onChange={(e) => handleChange(e, "email")}
-              value={formValues["email"]}
-            />
-            <span style={{ color: "red" }}>{errors.email}</span>
-            <label>Wpisz swoją wiadomość</label>
-            <textarea
-              name=""
-              id="message"
-              cols="50"
-              rows="5"
-              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              onChange={(e) => handleChange(e, "message")}
-              value={formValues["message"]}
-            ></textarea>
+              <div className="email-input">
+                <label>Wpisz swój email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="abc@xyz.com"
+                  onChange={(e) => handleChange(e, "email")}
+                  value={formValues["email"]}
+                />
+                <span style={{ color: "red" }}>{errors.email}</span>
+              </div>
+            </div>
+            <div className="message">
+              <label>Wpisz swoją wiadomość</label>
+              <textarea
+                name=""
+                id="message"
+                rows={4}
+                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                onChange={(e) => handleChange(e, "message")}
+                value={formValues["message"]}
+              ></textarea>
+              <span style={{ color: "red" }}>{errors.message}</span>
+            </div>
+
             <button>Wyślij</button>
           </form>
         </div>
